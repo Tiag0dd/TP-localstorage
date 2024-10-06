@@ -1,0 +1,71 @@
+/*
+json.stringify hacer de {nombre: "juan", edad: 21} a juan 21
+para hacer la inversa
+
+etiqueta table
+engloba toda la presentacion de un dato en una tabla ordenada
+
+thead
+tbody
+tfoot(?)
+
+filas y celdas, el encabezado es el thead y cada elemento del encabezado se genera con th
+ej
+
+HTML
+*/
+
+<table>
+  //son los encabezados de nuestra tabla
+  <thead>
+    //th son los elementos de nuestros encabezados
+    <th> Libro </th>
+    <th> Autor </th>
+    <th> Año </th>
+    <th> Género </th>
+  </thead>
+  <tbody id = "idtabla">
+    //tr es la fila
+    <tr>
+      //td es cada uno de los elementos de la fila
+      <td> Nombre del Libro </td>            
+      <td> Nombre del autor </td>
+      <td> año donde se escribió </td>
+      <td> genero del libro </td>
+    </tr>
+  </tbody>
+</table>
+
+JS
+
+const listartabla = (DATOS) => {
+
+  let tabla = document.getElementById("tabla")
+  //innerhtml = "" borra el contenido de mi tabla
+  tabla.innerHTML = ""
+  arraylibros.forEach( (libros) => (
+    body.innerHTML += //si yo pusiera solamente = se va a mostrar el último o el primero, en cambio si pongo += se agregan uno por uno
+    `<tr>
+      <td>${libros.titulo}</td>            
+      <td> ${libros.autor} </td>
+      <td> ${libros.año} </td>
+      <td> ${libros.genero === undefined ? "": libro.genero} </td>
+    </tr>`
+  ));
+
+}
+
+APUNTE 
+
+if (libro.genero === undefined) {
+  genero = ""
+} else {
+  genero = libro.genero
+}
+
+eso es esto
+
+<td> ${libros.genero === undefined ? "": libro.genero} </td>
+es un controlador ternario, lo he usado antes pero de manera diferente
+
+probar claude XD

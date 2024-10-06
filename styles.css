@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ece3; /* Fondo cálido */
+    color: #3E2E20; /* Texto oscuro cálido */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #8C5A2F; /* Marrón cálido */
+}
+
+/* Formularios */
+form {
+    background-color: #f4dfd0; /* Fondo cálido suave */
+    border: 1px solid #d3b79b; /* Borde marrón claro */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #8C5A2F;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d3b79b;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #DAA25D; /* Naranja cálido */
+    border: none;
+    border-radius: 4px;
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #C8894A; /* Naranja más oscuro */
+}
+
+/* Catálogo */
+.catalogo, .resultadosBusqueda, .listaProductos, .valorTotal {
+    background-color: #f5ece3;
+    border: 1px solid #d3b79b;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.catalogo div, .resultadosBusqueda div, .listaProductos div {
+    padding: 10px;
+    border-bottom: 1px solid #d3b79b;
+}
+
+.catalogo div:last-child, .resultadosBusqueda div:last-child, .listaProductos div:last-child {
+    border-bottom: none;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff6e5; /* Fondo blanco cálido */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #8C5A2F;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #A66A3F; /* Marrón más claro */
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff6e5;
+    border: 1px solid #d3b79b;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #DAA25D;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-bottom: 2px solid #d3b79b;
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #d3b79b;
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background-color: #f0e0c8; /* Fondo alterno cálido */
+}
+
+/* Hover en filas */
+tr:hover {
+    background-color: #edd2aa;
+}
+
+/* Botones en las opciones */
+.botonborrar, .botonEditarStock {
+    background-color: #E56747; /* Rojo cálido */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.botonborrar:hover, .botonEditarStock:hover {
+    background-color: #C2543A; /* Rojo oscuro */
+}
